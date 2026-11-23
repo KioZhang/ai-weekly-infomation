@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "issue_id": "2026-11-23",
+  "title": "AI 前沿与智能硬件周报｜2026-11-16 至 2026-11-22",
+  "timezone": "Asia/Shanghai",
+  "period_start": "2026-11-16",
+  "period_end": "2026-11-22",
+  "sections": [
+    {
+      "id": "ai-frontier",
+      "title": "AI 前沿",
+      "items": [
+        {
+          "title": "模型发布动态",
+          "summary": "",
+          "sources": [],
+          "subitems": [
+            {
+              "title": "11/17 · OpenAI GPT‑6.2 Astra / Sol",
+              "summary": "Astra 面向复杂推理和编码，Sol 主打速度与成本。两款均已在 API 提供。",
+              "sources": [
+                {
+                  "label": "OpenAI",
+                  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+                }
+              ]
+            },
+            {
+              "title": "11/18 · Google Gemini 4 Neon",
+              "summary": "面向多步骤任务和工具调用，已在付费 Gemini Developer API 正式上线。",
+              "sources": [
+                {
+                  "label": "Google",
+                  "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+                }
+              ]
+            },
+            {
+              "title": "11/16 · 阿里 Qwen4‑Max",
+              "summary": "阿里云更新托管接入；此前 11 日已开启预览，本次未发布权重。",
+              "sources": [
+                {
+                  "label": "阿里云",
+                  "url": "https://www.alibabacloud.com/help/en/model-studio/token-plan-product-updates"
+                }
+              ]
+            },
+            {
+              "title": "11/16–20 · 腾讯混元 Hy4 系列",
+              "summary": "flash 16 日上线托管服务，18 日开放权重；旗舰 20 日开放指令版、FP8 和基座权重，采用 Tencent Hy License。",
+              "sources": [
+                {
+                  "label": "flash 公告",
+                  "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/"
+                },
+                {
+                  "label": "旗舰仓库",
+                  "url": "https://github.com/Tencent-Hunyuan/Hy4#news"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Genie 4 开始向符合条件的 Google AI Ultra 用户开放",
+          "summary": "11/18 起陆续在 Project Genie 推出，支持用文字实时改变生成环境。",
+          "sources": [
+            {
+              "label": "Google DeepMind",
+              "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "AI 辅助芯片设计公布两项进展",
+          "summary": "11/18，Architect Labs 公布 Frostbite 的 7 nm 研究版图，未公布实硅测试；OpenAI 同日披露 Jalapeño 部分计算单元优化已通过实硅验证。",
+          "sources": [
+            {
+              "label": "Architect Labs",
+              "url": "https://architectlabs.com/blog/frostbite"
+            },
+            {
+              "label": "OpenAI",
+              "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "Perplexity 开放 Context API",
+          "summary": "11/18 宣布上线，可批量读取指定 URL，返回 Markdown、HTML 或相关片段。",
+          "sources": [
+            {
+              "label": "官方公告",
+              "url": "https://community.perplexity.ai/t/perplexity-context-api-is-live/6704"
+            }
+          ],
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": "smart-hardware",
+      "title": "智能硬件",
+      "items": [
+        {
+          "title": "华曦达与晶晨展示电视底座和可拆副屏",
+          "summary": "Cedar Display Hub 在曼谷 Google TV Summit 演示了不打断主屏播放的内容回顾，目前仍是概念样机。华曦达 11/17 与 Altice Labs 签署备忘录，计划在葡萄牙开展家庭试点，目标是 2027 年底前完成商业验证。",
+          "sources": [
+            {
+              "label": "展会公告",
+              "url": "https://www.prnewswire.com/news-releases/sdmcs-third-consecutive-year-at-googles-tv-summit-showcasing-home-physical-ai-302947146.html"
+            },
+            {
+              "label": "港交所披露",
+              "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1117/2026111701486_c.pdf"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "两项中控板卡软件更新",
+          "summary": "MediaTek Genio Pro 5100 的 Yocto 26.1 PR2 预制镜像开放 HDMI 和 USB‑C DisplayPort，暂未启用 eDP 和两路 DSI；米尔为现有 RK3576 板发布 OpenHarmony 6.1 镜像，提供触屏、相机和 NPU 示例。",
+          "sources": [
+            {
+              "label": "MediaTek",
+              "url": "https://genio-community.mediatek.com/t/genio-pro-5100-pre-release-2/3556"
+            },
+            {
+              "label": "米尔",
+              "url": "https://www.myir.cn/news/company/361.html"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "RTX Spark 小型 AI 台式机开始零售",
+          "summary": "NVIDIA 11/18 宣布上市，最高配备 128 GB 统一内存，搭载 Windows on Arm。",
+          "sources": [
+            {
+              "label": "NVIDIA",
+              "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/"
+            }
+          ],
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": "smart-home",
+      "title": "智能家居",
+      "items": [
+        {
+          "title": "国内拟研制智能家居互联强制性国标",
+          "summary": "工信部、市场监管总局 11/16 公开实施方案，将本地网络接入要求和公共指令集列入研制方向，尚未公布对应标准号和实施日期。",
+          "sources": [
+            {
+              "label": "工信部",
+              "url": "https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2026/art_bd11a0d16a61477883db13ac4d6cc889.html"
+            },
+            {
+              "label": "方案全文",
+              "url": "https://jxt.hubei.gov.cn/bmdt/rdjj/202611/t20261116_6123063.shtml"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "两款智能家居中枢更新",
+          "summary": "易来 Lucore Max 11/19 展示本地控制和 RTSP 视频分析，零售交付尚未确认；SwitchBot Hub 4 已在部分市场上市，支持本地红外控制，Matter 桥接上限为 30 项，含内置传感器项。",
+          "sources": [
+            {
+              "label": "Lucore",
+              "url": "https://lucore.ai/intelligence/"
+            },
+            {
+              "label": "SwitchBot",
+              "url": "https://www.prnewswire.com/news-releases/switchbot-launches-hub-4-with-hello-kata-voice-control-for-a-more-connected-home-302940396.html"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "旧 Nest App 将于 2027 年 1 月 25 日停用",
+          "summary": "Google 11/20 公告，受支持设备和常规录像将开始迁往 Google Home；旧网页手动保存的剪辑不随迁移转移。未迁移账户的数据删除流程从 3 月 25 日开始。",
+          "sources": [
+            {
+              "label": "Google",
+              "url": "https://support.google.com/googlehome/answer/18959693?hl=en"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "Aeotec 加入 Works with Home Assistant",
+          "summary": "11/18 公布首批 9 款认证产品，其中 Z‑Wave Long Range 功能需兼容适配器。",
+          "sources": [
+            {
+              "label": "Home Assistant",
+              "url": "https://www.home-assistant.io/blog/2026/11/18/aeotec-joins-works-with-home-assistant/"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "ESPHome 2026.11.0 升级 LVGL 9.6",
+          "summary": "新增菜单、选色器等控件；ESP32 Thread 边界路由仍为实验功能。",
+          "sources": [
+            {
+              "label": "ESPHome",
+              "url": "https://next.esphome.io/blog/2026/11/18/esphome-2026-11/"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "Music Assistant 和 Sendspin 更新",
+          "summary": "11/19 的 Sendspin C++ v0.10.0 调整内存预分配和音频格式传递；11/22 的 Music Assistant 开发版修复 AirPlay 与 Sendspin 分组因服务器时钟漂移而失步，以及 HomeView 经 AirPlay 2 无声的问题。",
+          "sources": [
+            {
+              "label": "Sendspin C++",
+              "url": "https://github.com/Sendspin/sendspin-cpp/releases/tag/v0.10.0"
+            },
+            {
+              "label": "Music Assistant",
+              "url": "https://github.com/music-assistant/server/releases/tag/2.11.0.dev2026112203"
+            }
+          ],
+          "subitems": []
+        }
+      ]
+    },
+    {
+      "id": "ai-open-source",
+      "title": "AI 开源热点项目",
+      "items": [
+        {
+          "title": "Hermes Agent v0.23.3（MIT）",
+          "summary": "更新提示词缓存管理，并将 SQLite 存储拆到独立的持久化接口后面。",
+          "sources": [
+            {
+              "label": "版本记录",
+              "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.3"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "本地推理工具更新",
+          "summary": "LocalAI 5.0 系列（MIT）在模型更新时保留旧权重，直至新文件通过校验；vLLM 0.34.0（Apache‑2.0）更新 CUDA/ROCm 的 KV 缓存配置逻辑，采用预热结果。",
+          "sources": [
+            {
+              "label": "LocalAI",
+              "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1"
+            },
+            {
+              "label": "vLLM",
+              "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "腾讯 LoopForge v0.4.0（MIT）",
+          "summary": "这个用于编排代理任务的工具新增调度执行历史。",
+          "sources": [
+            {
+              "label": "版本记录",
+              "url": "https://github.com/Tencent/LoopForge/releases/tag/v0.4.0"
+            }
+          ],
+          "subitems": []
+        }
+      ]
+    }
+  ]
+}
