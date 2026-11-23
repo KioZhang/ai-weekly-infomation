@@ -8,10 +8,5 @@
 | --- | --- |
 | [AGENTS.md](AGENTS.md) | 仓库维护与内容边界 |
 | [prompts/weekly-digest.md](prompts/weekly-digest.md) | 现行周报定时任务提示词的公开存档 |
+| [CHANGELOG.md](CHANGELOG.md) | 历期周报索引 |
 | [weekly/](weekly/) | 正式周报归档，每期一份 `YYYY-MM-DD.json`，以北京时间原定发布的周一命名 |
-
-## 交付分工
-
-小D负责收集、核实、去重和成稿。接入后，Hermes 从本仓库读取正式周报，负责写入飞书多维表格、发布群卡片，并基于已发布的资讯回答群内提问。仓库不运行采集或推送任务。
-
-**交付与归档：** 周报仍在 ChatGPT 私聊交付，公开版归档在 `weekly/`。历期发布记录见 [CHANGELOG.md](CHANGELOG.md)。Hermes 拉取和飞书分发尚未联通。仓库仅存放可公开的资讯与文档。
