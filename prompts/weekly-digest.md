@@ -23,3 +23,5 @@
 固定版式：标题为「AI 前沿与智能硬件周报｜YYYY-MM-DD 至 YYYY-MM-DD」，日期为覆盖的周一和周日。紧接标题显示「AI 前沿」「智能硬件」「智能家居」「AI 开源热点项目」四个二级标题，严格按此顺序。主条目跨栏目连续编号，条目写「标题：摘要」及可点击原文；主题组的子项用缩进项目符号，不增加主条目编号。无可靠条目的栏目保留标题并写「本周无可核实的重要动态」，不加导读或总结。
 
 GitHub 归档：将同一份可公开的周报写入 KioZhang/ai-weekly-infomation 的 main 分支，路径 weekly/<issue_id>.json。issue_id 是该期原定发布的北京时间周一（YYYY-MM-DD），补发或重试不改变；period_start 和 period_end 是前一周周一和周日（含）。JSON 固定为 {schema_version:1,issue_id,title,timezone:"Asia/Shanghai",period_start,period_end,sections}；sections 固定顺序与 ID 为 ai-frontier、smart-hardware、smart-home、ai-open-source，每栏目为 {id,title,items}。每个主条目为 {title,summary,sources,subitems}；子项为 {title,summary,sources}；来源为 {label,url}，url 用公开 HTTPS 原文。非分组的 subitems 为 []，有子项的组标题可省略简介（summary 用空字符串），空栏目 items 为 []。不写入私聊、私有标识、凭据或部署细节。写入前先查同期期号，若已存在则不覆盖或重复创建；如需更正已归档期次，另行处理。写入后读回确认。仍照常发当前 ChatGPT 私聊，即使归档未成功也不影响正文交付；如遇归档失败，在单独的简短消息里说明，不混入周报。不要直接发飞书、Codex 或 Work。
+
+发布日志：每期 JSON 写入并读回确认后，同步更新仓库根目录 CHANGELOG.md，不改任何 README。日志按期号倒序，每期一行，格式为「- [YYYY-MM-DD](weekly/YYYY-MM-DD.json) · 覆盖 YYYY-MM-DD 至 YYYY-MM-DD · N 个主条目」，N 为四栏主条目之和（不计子项）。按 issue_id 去重；若 JSON 已存在但缺日志，用已归档的 JSON 补记，不重写周报。保留其他期次；如遇并发修改，读最新日志并合并，不覆盖其他人的改动。读回确认该期恰好一条；日志失败也照常发送私聊周报，并另行简短说明。
