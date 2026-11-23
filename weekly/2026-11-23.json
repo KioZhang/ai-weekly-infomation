@@ -17,7 +17,7 @@
           "subitems": [
             {
               "title": "11/17 · OpenAI GPT‑6.2 Astra / Sol",
-              "summary": "Astra 面向复杂推理和编码，Sol 主打速度与成本。两款均已在 API 提供。",
+              "summary": "Astra 面向复杂专业任务，API 输入／输出每百万 token 分别为 8／40 美元，比上代低 20%；Sol 维持上代价格。两款均已在 API 提供。同时在 ChatGPT Work 和 Codex 提供。",
               "sources": [
                 {
                   "label": "OpenAI",
@@ -27,11 +27,21 @@
             },
             {
               "title": "11/18 · Google Gemini 4 Neon",
-              "summary": "面向多步骤任务和工具调用，已在付费 Gemini Developer API 正式上线。",
+              "summary": "面向编码和多步骤知识工作，提供 100 万 token 上下文。付费 Gemini Developer API 输入／输出每百万 token 分别为 3／15 美元。也在 AI Studio 上线，并向 Gemini 应用的相应付费层级开放。",
               "sources": [
                 {
                   "label": "Google",
                   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+                }
+              ]
+            },
+            {
+              "title": "11/17 · 微软 MAI Code 2 和 Code 2 Flash",
+              "summary": "两款编码模型进入 GitHub Copilot。微软称 Code 2 在四项特定编码基准上的平均成绩相当于 GPT‑6.1 Sol 的 98%，成本约为其 40%；成本按五折促销价计算。",
+              "sources": [
+                {
+                  "label": "Microsoft AI",
+                  "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
                 }
               ]
             },
@@ -56,6 +66,10 @@
                 {
                   "label": "旗舰仓库",
                   "url": "https://github.com/Tencent-Hunyuan/Hy4#news"
+                },
+                {
+                  "label": "Hy4 Base 模型卡",
+                  "url": "https://huggingface.co/tencent/Hy4-base"
                 }
               ]
             }
@@ -63,7 +77,7 @@
         },
         {
           "title": "Genie 4 开始向符合条件的 Google AI Ultra 用户开放",
-          "summary": "11/18 起陆续在 Project Genie 推出，支持用文字实时改变生成环境。",
+          "summary": "11/18 起向符合条件的 Google AI Ultra 用户推出：可在探索过程中用文字实时改动环境，并由模型生成随场景变化的音频。",
           "sources": [
             {
               "label": "Google DeepMind",
@@ -74,7 +88,7 @@
         },
         {
           "title": "AI 辅助芯片设计公布两项进展",
-          "summary": "11/18，Architect Labs 公布 Frostbite 的 7 nm 研究版图，未公布实硅测试；OpenAI 同日披露 Jalapeño 部分计算单元优化已通过实硅验证。",
+          "summary": "11/18，OpenAI 披露 Jalapeño 的部分设计优化已经实硅验证；与 AMD 合作的 GPU 模块优化在其基线下最高改善 14% 的功耗、性能和面积指标，部分改动已进入送产设计。Architect Labs 同日发布 Frostbite 研究版图，在其 25 项负载上估算每瓦性能为对照核心的 4.59 倍，未公布实硅测试。",
           "sources": [
             {
               "label": "Architect Labs",
@@ -89,7 +103,7 @@
         },
         {
           "title": "Perplexity 开放 Context API",
-          "summary": "11/18 宣布上线，可批量读取指定 URL，返回 Markdown、HTML 或相关片段。",
+          "summary": "11/18 上线，单次最多读取 10 个 URL，返回 Markdown、HTML、链接和相关片段，按抓取 URL 数计价，每 1,000 个 1 美元。",
           "sources": [
             {
               "label": "官方公告",
@@ -136,11 +150,76 @@
         },
         {
           "title": "RTX Spark 小型 AI 台式机开始零售",
-          "summary": "NVIDIA 11/18 宣布上市，最高配备 128 GB 统一内存，搭载 Windows on Arm。",
+          "summary": "11/18 宣布华硕、戴尔和微星机型开始销售，搭载 20 核 Grace CPU、Blackwell RTX GPU 和最高 128 GB 统一内存，运行 Windows on Arm。",
           "sources": [
             {
               "label": "NVIDIA",
               "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "工业机器人部署与试点进展",
+          "summary": "",
+          "sources": [],
+          "subitems": [
+            {
+              "title": "11/17 · Boston Dynamics 与 GlobalFoundries 扩大合作",
+              "summary": "将扩大 Spot 在多个晶圆厂的巡检部署。GlobalFoundries 加入 Atlas 早期采用计划，现场试验定于 2027 年初，尚非正式部署。",
+              "sources": [
+                {
+                  "label": "Boston Dynamics",
+                  "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/"
+                },
+                {
+                  "label": "GlobalFoundries",
+                  "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration"
+                }
+              ]
+            },
+            {
+              "title": "11/20 · 智元人形机器人进入手机测试产线",
+              "summary": "第一财经和每日经济新闻报道，智元与蓝思在手机测试线上部署精灵 G2，用于上下料及与测试设备交互。企业未公开可核验的节拍或良率。",
+              "sources": [
+                {
+                  "label": "第一财经",
+                  "url": "https://www.yicai.com/news/103448491.html"
+                },
+                {
+                  "label": "每日经济新闻",
+                  "url": "https://www.mrjjxw.com/articles/2026-11-20/4653970.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "三星与 Google 智能眼镜韩国渠道首批预售售罄",
+          "summary": "《韩国先驱报》11/16 报道，Gentle Monster 韩国网店的 16 款款式均显示售罄。预售于 11/12 开始，正式上市计划是 12/10，备货量未公布。",
+          "sources": [
+            {
+              "label": "韩国先驱报",
+              "url": "https://www.koreaherald.com/article/10938540"
+            },
+            {
+              "label": "三星",
+              "url": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world"
+            }
+          ],
+          "subitems": []
+        },
+        {
+          "title": "微软在 Ignite 披露 Maia 200 的大模型部署",
+          "summary": "11/17，微软披露 Maia 200 已承载其大模型生产负载。微软 10 月已披露该加速器用于部分生产负载，这次不是首次投产。",
+          "sources": [
+            {
+              "label": "Microsoft AI",
+              "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+            },
+            {
+              "label": "微软 10 月部署更新",
+              "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
             }
           ],
           "subitems": []
@@ -168,7 +247,7 @@
         },
         {
           "title": "两款智能家居中枢更新",
-          "summary": "易来 Lucore Max 11/19 展示本地控制和 RTSP 视频分析，零售交付尚未确认；SwitchBot Hub 4 已在部分市场上市，支持本地红外控制，Matter 桥接上限为 30 项，含内置传感器项。",
+          "summary": "易来 Lucore Max 11/19 展示本地控制与 RTSP 视频分析，零售交付尚未确认；SwitchBot Hub 4 11/18 在日本开启预售，支持本地红外控制，Matter 桥接上限 30 项（含内置传感器项），并加入 Hello Kata 语音控制。",
           "sources": [
             {
               "label": "Lucore",
@@ -177,17 +256,25 @@
             {
               "label": "SwitchBot",
               "url": "https://www.prnewswire.com/news-releases/switchbot-launches-hub-4-with-hello-kata-voice-control-for-a-more-connected-home-302940396.html"
+            },
+            {
+              "label": "SwitchBot 日本公告",
+              "url": "https://prtimes.jp/main/html/rd/p/000000219.000057002.html"
             }
           ],
           "subitems": []
         },
         {
-          "title": "旧 Nest App 将于 2027 年 1 月 25 日停用",
-          "summary": "Google 11/20 公告，受支持设备和常规录像将开始迁往 Google Home；旧网页手动保存的剪辑不随迁移转移。未迁移账户的数据删除流程从 3 月 25 日开始。",
+          "title": "Google 公布旧 Nest App 和音箱／屏幕语音助手的退役安排",
+          "summary": "Google 11/20 公告，旧 Nest App 与网页将于 2027-01-25 停用，受支持设备与常规录像迁往 Google Home，旧网页手动保存的剪辑不随迁移转移。智能音箱和显示屏上的 Google Assistant 将自 2027 年 8 月起逐步退役；Gemini for Home 需接受升级。",
           "sources": [
             {
               "label": "Google",
               "url": "https://support.google.com/googlehome/answer/18959693?hl=en"
+            },
+            {
+              "label": "Google 迁移公告",
+              "url": "https://support.google.com/googlehome/blog/478236207/a-modern-foundation-for-your-smart-home-changes-coming-to-google-assistant-and-nest-app?hl=en"
             }
           ],
           "subitems": []
@@ -204,30 +291,66 @@
           "subitems": []
         },
         {
-          "title": "ESPHome 2026.11.0 升级 LVGL 9.6",
-          "summary": "新增菜单、选色器等控件；ESP32 Thread 边界路由仍为实验功能。",
+          "title": "Aqara 推出六款智能照明产品",
+          "summary": "11/17 公布 T1 落地灯、T2 筒灯／灯带／球泡和 H1 户外串灯／永久户外灯，并列出区域购买链接。T1 落地灯支持分区控光，系列接入方式依型号区分 Matter over Thread 和 Zigbee。",
           "sources": [
             {
-              "label": "ESPHome",
-              "url": "https://next.esphome.io/blog/2026/11/18/esphome-2026-11/"
+              "label": "Aqara 官方公告",
+              "url": "https://forum.aqara.com/t/introducing-6-new-aqara-lights-from-cozy-corners-to-colorful-outdoors/359194"
+            },
+            {
+              "label": "9to5Mac",
+              "url": "https://9to5mac.com/2026/11/18/six-new-aqara-smart-lights-with-apple-home-support-and-spatial-intelligence/"
             }
           ],
           "subitems": []
         },
         {
-          "title": "Music Assistant 和 Sendspin 更新",
-          "summary": "11/19 的 Sendspin C++ v0.10.0 调整内存预分配和音频格式传递；11/22 的 Music Assistant 开发版修复 AirPlay 与 Sendspin 分组因服务器时钟漂移而失步，以及 HomeView 经 AirPlay 2 无声的问题。",
-          "sources": [
+          "title": "开源智能家居软件集中更新",
+          "summary": "",
+          "sources": [],
+          "subitems": [
             {
-              "label": "Sendspin C++",
-              "url": "https://github.com/Sendspin/sendspin-cpp/releases/tag/v0.10.0"
+              "title": "11/16 · Home Assistant 2026.11.2",
+              "summary": "修复禁用实体的重复唯一 ID 触发 MQTT 循环重载，以及 ONVIF 未配置回调地址时仍订阅通知的问题。",
+              "sources": [
+                {
+                  "label": "版本记录",
+                  "url": "https://github.com/home-assistant/core/releases/tag/2026.11.2"
+                }
+              ]
             },
             {
-              "label": "Music Assistant",
-              "url": "https://github.com/music-assistant/server/releases/tag/2.11.0.dev2026112203"
+              "title": "11/18 · ESPHome 2026.11.0",
+              "summary": "升级至 LVGL 9.6，新增菜单和选色器等控件；ESP32 Thread 边界路由仍属实验功能。",
+              "sources": [
+                {
+                  "label": "发布说明",
+                  "url": "https://esphome.io/blog/2026/11/18/esphome-2026-11/"
+                }
+              ]
+            },
+            {
+              "title": "11/19 · Sendspin C++ v0.10.0",
+              "summary": "调整内存预分配和音频格式传递。",
+              "sources": [
+                {
+                  "label": "版本记录",
+                  "url": "https://github.com/Sendspin/sendspin-cpp/releases/tag/v0.10.0"
+                }
+              ]
+            },
+            {
+              "title": "11/22 · Music Assistant 2.11.0 开发版",
+              "summary": "修复 AirPlay 与 Sendspin 分组因服务器时钟漂移而失步，以及 HomeView 经 AirPlay 2 无声的问题。",
+              "sources": [
+                {
+                  "label": "版本记录",
+                  "url": "https://github.com/music-assistant/server/releases/tag/2.11.0.dev2026112203"
+                }
+              ]
             }
-          ],
-          "subitems": []
+          ]
         }
       ]
     },
@@ -236,8 +359,43 @@
       "title": "AI 开源热点项目",
       "items": [
         {
+          "title": "两款开放权重模型发布",
+          "summary": "",
+          "sources": [],
+          "subitems": [
+            {
+              "title": "11/20 · Thinking Machines Inkling 2 Mini",
+              "summary": "多模态循环 MoE，26.4B 总参数、约 3.4B 活跃参数，中间层循环三次。Apache‑2.0 开放权重；官方建议 Apple Silicon 至少 32 GB 内存，其他 GPU 平台至少 32 GB 显存。",
+              "sources": [
+                {
+                  "label": "官方发布",
+                  "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+                },
+                {
+                  "label": "模型卡",
+                  "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+                }
+              ]
+            },
+            {
+              "title": "11/18 · RadixArk DaisyRose‑27B",
+              "summary": "基于 Qwen3.8‑27B，仅用强化学习进行后训练，未做监督微调或蒸馏。权重采用 Apache‑2.0；厂商自测 Terminal‑Bench 4.1 的 pass@1 从 5.6% 升至 12.0%。",
+              "sources": [
+                {
+                  "label": "官方发布",
+                  "url": "https://www.radixark.com/blog/daisyrose-27b"
+                },
+                {
+                  "label": "模型卡",
+                  "url": "https://huggingface.co/RadixArk/DaisyRose-27B"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "title": "Hermes Agent v0.23.3（MIT）",
-          "summary": "更新提示词缓存管理，并将 SQLite 存储拆到独立的持久化接口后面。",
+          "summary": "11/19 发布，更新提示词缓存生命周期管理，默认开启工具结果修剪，并将 SQLite 存储置于独立的持久化接口之后。",
           "sources": [
             {
               "label": "版本记录",
@@ -248,18 +406,34 @@
         },
         {
           "title": "本地推理工具更新",
-          "summary": "LocalAI 5.0 系列（MIT）在模型更新时保留旧权重，直至新文件通过校验；vLLM 0.34.0（Apache‑2.0）更新 CUDA/ROCm 的 KV 缓存配置逻辑，采用预热结果。",
-          "sources": [
+          "summary": "",
+          "sources": [],
+          "subitems": [
             {
-              "label": "LocalAI",
-              "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1"
+              "title": "11/18 · LocalAI 5.0（MIT）",
+              "summary": "新增桌面应用、项目分组、文件页和 Python 沙箱。5.0 系列在模型更新时保留旧权重，直至新文件通过校验。",
+              "sources": [
+                {
+                  "label": "5.0 版本记录",
+                  "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.0"
+                },
+                {
+                  "label": "LocalAI",
+                  "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1"
+                }
+              ]
             },
             {
-              "label": "vLLM",
-              "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+              "title": "11/16 · vLLM 0.34.0（Apache‑2.0）",
+              "summary": "默认启用可扩展 KV 缓存，按预热后的可用内存定容；GPU 执行器移除 Model Runner V1。",
+              "sources": [
+                {
+                  "label": "版本记录",
+                  "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
+                }
+              ]
             }
-          ],
-          "subitems": []
+          ]
         },
         {
           "title": "腾讯 LoopForge v0.4.0（MIT）",
