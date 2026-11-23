@@ -387,6 +387,29 @@
       "title": "AI 开源热点项目",
       "items": [
         {
+          "title": "腾讯 LoopForge（MIT）",
+          "summary": "腾讯轻量云团队 11/09 发布开源介绍。该项目用脚本、角色分工和人工审批来编排编码 Agent 的交付流程。11/17 发布 v0.4.0；GitDiscover 的 11/16 至 11/22 日快照从约 2,100 星升至 5,500 星，净增约 3,400 星。",
+          "sources": [
+            {
+              "label": "项目主页",
+              "url": "https://loopforge.cn/"
+            },
+            {
+              "label": "腾讯团队开源公告",
+              "url": "https://developer.cloud.tencent.com/article/2779233"
+            },
+            {
+              "label": "v0.4.0 版本记录",
+              "url": "https://github.com/Tencent/LoopForge/releases/tag/v0.4.0"
+            },
+            {
+              "label": "星标历史快照",
+              "url": "https://gitdiscover.org/zh/repositories/Tencent/LoopForge"
+            }
+          ],
+          "subitems": []
+        },
+        {
           "title": "rust-anything（MIT）",
           "summary": "11/16 首次公开。为编码代理提供把现有程序逐步迁移到 Rust 的工具，用原程序录制的行为检查重写结果。OSS Radar 的 UTC 日快照记录，11/20 新增约 1,500 星。",
           "sources": [
