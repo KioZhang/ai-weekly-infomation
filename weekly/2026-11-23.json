@@ -72,6 +72,34 @@
                   "url": "https://huggingface.co/tencent/Hy4-base"
                 }
               ]
+            },
+            {
+              "title": "11/20 · Thinking Machines Inkling 2 Mini",
+              "summary": "多模态循环 MoE，26.4B 总参数、约 3.4B 活跃参数，中间层循环三次。Apache‑2.0 开放权重；官方建议 Apple Silicon 至少 32 GB 内存，其他 GPU 平台至少 32 GB 显存。",
+              "sources": [
+                {
+                  "label": "官方发布",
+                  "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+                },
+                {
+                  "label": "模型卡",
+                  "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
+                }
+              ]
+            },
+            {
+              "title": "11/18 · RadixArk DaisyRose‑27B",
+              "summary": "基于 Qwen3.8‑27B，仅用强化学习进行后训练，未做监督微调或蒸馏。权重采用 Apache‑2.0；厂商自测 Terminal‑Bench 4.1 的 pass@1 从 5.6% 升至 12.0%。",
+              "sources": [
+                {
+                  "label": "官方发布",
+                  "url": "https://www.radixark.com/blog/daisyrose-27b"
+                },
+                {
+                  "label": "模型卡",
+                  "url": "https://huggingface.co/RadixArk/DaisyRose-27B"
+                }
+              ]
             }
           ]
         },
@@ -359,89 +387,47 @@
       "title": "AI 开源热点项目",
       "items": [
         {
-          "title": "两款开放权重模型发布",
-          "summary": "",
-          "sources": [],
-          "subitems": [
-            {
-              "title": "11/20 · Thinking Machines Inkling 2 Mini",
-              "summary": "多模态循环 MoE，26.4B 总参数、约 3.4B 活跃参数，中间层循环三次。Apache‑2.0 开放权重；官方建议 Apple Silicon 至少 32 GB 内存，其他 GPU 平台至少 32 GB 显存。",
-              "sources": [
-                {
-                  "label": "官方发布",
-                  "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
-                },
-                {
-                  "label": "模型卡",
-                  "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini"
-                }
-              ]
-            },
-            {
-              "title": "11/18 · RadixArk DaisyRose‑27B",
-              "summary": "基于 Qwen3.8‑27B，仅用强化学习进行后训练，未做监督微调或蒸馏。权重采用 Apache‑2.0；厂商自测 Terminal‑Bench 4.1 的 pass@1 从 5.6% 升至 12.0%。",
-              "sources": [
-                {
-                  "label": "官方发布",
-                  "url": "https://www.radixark.com/blog/daisyrose-27b"
-                },
-                {
-                  "label": "模型卡",
-                  "url": "https://huggingface.co/RadixArk/DaisyRose-27B"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Hermes Agent v0.23.3（MIT）",
-          "summary": "11/19 发布，更新提示词缓存生命周期管理，默认开启工具结果修剪，并将 SQLite 存储置于独立的持久化接口之后。",
+          "title": "rust-anything（MIT）",
+          "summary": "11/16 首次公开。为编码代理提供把现有程序逐步迁移到 Rust 的工具，用原程序录制的行为检查重写结果。OSS Radar 的 UTC 日快照记录，11/20 新增约 1,500 星。",
           "sources": [
             {
-              "label": "版本记录",
-              "url": "https://github.com/NousResearch/hermes-agent/releases/tag/v0.23.3"
+              "label": "项目主页",
+              "url": "https://github.com/erkamyaman/rust-anything"
+            },
+            {
+              "label": "首次公开记录",
+              "url": "https://artnagh.github.io/openshelf/r/erkamyaman/rust-anything/"
+            },
+            {
+              "label": "11/20 星标快照",
+              "url": "https://ossradar.net/daily/2026-11-20"
             }
           ],
           "subitems": []
         },
         {
-          "title": "本地推理工具更新",
-          "summary": "",
-          "sources": [],
-          "subitems": [
-            {
-              "title": "11/18 · LocalAI 5.0（MIT）",
-              "summary": "新增桌面应用、项目分组、文件页和 Python 沙箱。5.0 系列在模型更新时保留旧权重，直至新文件通过校验。",
-              "sources": [
-                {
-                  "label": "5.0 版本记录",
-                  "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.0"
-                },
-                {
-                  "label": "LocalAI",
-                  "url": "https://github.com/mudler/LocalAI/releases/tag/v5.0.1"
-                }
-              ]
-            },
-            {
-              "title": "11/16 · vLLM 0.34.0（Apache‑2.0）",
-              "summary": "默认启用可扩展 KV 缓存，按预热后的可用内存定容；GPU 执行器移除 Model Runner V1。",
-              "sources": [
-                {
-                  "label": "版本记录",
-                  "url": "https://github.com/vllm-project/vllm/releases/tag/v0.34.0"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "腾讯 LoopForge v0.4.0（MIT）",
-          "summary": "这个用于编排代理任务的工具新增调度执行历史。",
+          "title": "SoduWork（MIT）",
+          "summary": "10 月底出现，11/13 已有公开发行包。这个可自托管的团队协作工具可以用不同的 Agent 执行和复核任务，再由人确认。OSS Radar 的 UTC 日快照记录，11/20 新增约 1,800 星。",
           "sources": [
             {
-              "label": "版本记录",
-              "url": "https://github.com/Tencent/LoopForge/releases/tag/v0.4.0"
+              "label": "项目主页",
+              "url": "https://www.soduwork.ai"
+            },
+            {
+              "label": "官方仓库",
+              "url": "https://github.com/mdiri-ai/SoduWork"
+            },
+            {
+              "label": "项目公开记录",
+              "url": "https://dailylaunch.org/p/soduwork"
+            },
+            {
+              "label": "11/13 版本记录",
+              "url": "https://github.com/mdiri-ai/SoduWork/releases/tag/v1.13.15"
+            },
+            {
+              "label": "11/20 星标快照",
+              "url": "https://ossradar.net/daily/2026-11-20"
             }
           ],
           "subitems": []
